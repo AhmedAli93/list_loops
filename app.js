@@ -53,21 +53,15 @@ while (counter !== 5) {
 
 var visited = ['Canada', ' Kenya', ' Mexico', ' England'];
 var answer = prompt('What countries have I visited?');
-var count = 0;
-var flag;
+var count = 6;
 
 for (var i = 0; i < visited.length; i++) {
   console.log('each iteration:', visited[i]);
-  count++;
+  count--;
   console.log(count);
   if (answer === visited[i]) {
     alert('nice job!  you got it right!');
-    flag = true;
     break;
   }
 
-}
-
-if (!flag) {
-  alert('nope you are wrong these are the countries I have visited '+visited);
 }
